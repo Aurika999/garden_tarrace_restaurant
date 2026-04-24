@@ -59,7 +59,7 @@ const Chefs = () => {
                                     <div className="chef_name">{chef.name}</div>
                                     <div className="chef_subtitle">{chef.role}</div>
                                     <div className="chef_button ml-auto mr-auto trans_400">
-                                        <a href="#">see more</a>
+
                                     </div>
                                 </div>
                             </div>

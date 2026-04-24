@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/contact.css";
 import "../styles/contact_responsive.css";
-import Header from "../components/Header";
 import contactImg from "../assets/images/contact_A.jpg";
 import Hero from "../components/Hero";
 import Map from "../components/Map";
-import ContactForm from "../components/ContactForm";
-import ReservationForm from "../components/ReservationForm";
+
 
 const Contact = () => {
     const mapRef = useRef(null);
@@ -127,9 +125,9 @@ const Contact = () => {
                                     <div className="contact_social">
                                         <ul className="d-flex flex-row align-items-center justify-content-start">
                                             <li>
-                                                <a href="#">
-                                                    <i className="fa fa-pinterest"></i>
-                                                </a>
+                                                {/*<a href="#">*/}
+                                                {/*    <i className="fa fa-pinterest"></i>*/}
+                                                {/*</a>*/}
                                             </li>
                                             <li>
                                                 <a href="https://www.facebook.com/profile.php?id=61573340181288">

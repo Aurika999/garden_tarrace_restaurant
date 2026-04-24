@@ -19,47 +19,44 @@ import MenuImage from "../assets/images/menu.jpg";
 import StartersImage from "../assets/images/start1.jpeg";
 import MainImage from "../assets/images/peste.jpeg";
 import DesertsImage from "../assets/images/desert.jpeg";
-import Sig1Image from "../assets/images/sig_1.jpg";
-import Sig2Image from "../assets/images/sig_2.jpg";
-import Sig3Image from "../assets/images/sig_3.jpg";
 
 const MenuPage = () => {
 
-    const dishes = {
-        starters: [
-            { title: "Pork Tenderloin in Green Pepper", price: "$20" },
-            { title: "Shrimp with Garlic", price: "$17" },
-            { title: "Wild Mushroom with Chicken", price: "$20" },
-            { title: "Oysters with Baked Potatoes", price: "$20" },
-            { title: "Roast Pork", price: "$17" },
-        ],
-        main: [
-            { title: "Chicken with Lemon", price: "$20" },
-            { title: "Shrimp with Garlic", price: "$17" },
-            { title: "Wild Mushroom with Chicken", price: "$20" },
-            { title: "Oysters with Baked Potatoes", price: "$20" },
-            { title: "Roast Pork", price: "$17" },
-        ],
-        deserts: [
-            { title: "Lava Cake", price: "$20" },
-            { title: "Orange Tart", price: "$17" },
-            { title: "Cheese Cake", price: "$20" },
-            { title: "Chocolate Mousse", price: "$17" },
-            { title: "Ice Cream", price: "$17" },
-        ]
-    };
-
-    const renderDish = (dish) => (
-        <div className="dish" key={dish.title}>
-            <div className="dish_title_container d-flex flex-row justify-content-between">
-                <div className="dish_title">{dish.title}</div>
-                <div className="dish_price">{dish.price}</div>
-            </div>
-            <div className="dish_order">
-                <a href="#">Order Now</a>
-            </div>
-        </div>
-    );
+    // const dishes = {
+    //     starters: [
+    //         { title: "Pork Tenderloin in Green Pepper", price: "$20" },
+    //         { title: "Shrimp with Garlic", price: "$17" },
+    //         { title: "Wild Mushroom with Chicken", price: "$20" },
+    //         { title: "Oysters with Baked Potatoes", price: "$20" },
+    //         { title: "Roast Pork", price: "$17" },
+    //     ],
+    //     main: [
+    //         { title: "Chicken with Lemon", price: "$20" },
+    //         { title: "Shrimp with Garlic", price: "$17" },
+    //         { title: "Wild Mushroom with Chicken", price: "$20" },
+    //         { title: "Oysters with Baked Potatoes", price: "$20" },
+    //         { title: "Roast Pork", price: "$17" },
+    //     ],
+    //     deserts: [
+    //         { title: "Lava Cake", price: "$20" },
+    //         { title: "Orange Tart", price: "$17" },
+    //         { title: "Cheese Cake", price: "$20" },
+    //         { title: "Chocolate Mousse", price: "$17" },
+    //         { title: "Ice Cream", price: "$17" },
+    //     ]
+    // };
+    //
+    // const renderDish = (dish) => (
+    //     <div className="dish" key={dish.title}>
+    //         <div className="dish_title_container d-flex flex-row justify-content-between">
+    //             <div className="dish_title">{dish.title}</div>
+    //             <div className="dish_price">{dish.price}</div>
+    //         </div>
+    //         <div className="dish_order">
+    //             <a href="#">Order Now</a>
+    //         </div>
+    //     </div>
+    // );
 
     return (
         <div className="super_container">

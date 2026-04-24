@@ -3,7 +3,6 @@ import "../styles/about.css";
 import "../styles/about_responsive.css";
 import aboutBg from "../assets/images/about.jpg";
 import Testimonials from "../components/Testimonials";
-import Chefs from "../components/Chefs";
 import Intro from "../components/Intro";
 
 function About() {
@@ -34,7 +33,6 @@ function About() {
                 </div>
             </div>
             <Intro/>
-            {/*<Chefs/>*/}
             <Testimonials/>
         </div>
     );

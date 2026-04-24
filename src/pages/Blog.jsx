@@ -1,7 +1,5 @@
 // src/pages/Blog.jsx
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 // Import CSS (adaptează căile dacă ai pus fișierele în assets/styles)
 import "../styles/blog.css";
@@ -107,15 +105,15 @@ export default function Blog() {
                                         <div className="blog_post_image">
                                             <img src={post.img} alt={post.title} />
                                         </div>
-                                        <div className="blog_post_date"><a href="#">{post.date}</a></div>
+                                        {/*<div className="blog_post_date"><a href="#">{post.date}</a></div>*/}
                                     </div>
                                     <div className="blog_post_content">
-                                        <div className="blog_post_title"><a href="#">{post.title}</a></div>
+                                        {/*<div className="blog_post_title"><a href="#">{post.title}</a></div>*/}
                                         <div className="blog_post_info">
                                             <ul className="d-flex flex-row align-items-center justify-content-start">
-                                                <li>by <a href="#">{post.author}</a></li>
-                                                <li>in <a href="#">{post.category}</a></li>
-                                                <li><a href="#">{post.comments} Comments</a></li>
+                                                {/*<li>by <a href="#">{post.author}</a></li>*/}
+                                                {/*<li>in <a href="#">{post.category}</a></li>*/}
+                                                {/*<li><a href="#">{post.comments} Comments</a></li>*/}
                                             </ul>
                                         </div>
                                         <div className="blog_post_text">
@@ -130,7 +128,7 @@ export default function Blog() {
                     <div className="row load_more_row">
                         <div className="col text-center">
                             <div className="button load_more_button ml-auto mr-auto trans_200">
-                                <a href="#">Load More</a>
+                                {/*<a href="#">Load More</a>*/}
                             </div>
                         </div>
                     </div>
