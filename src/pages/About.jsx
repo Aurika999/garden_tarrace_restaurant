@@ -1,0 +1,43 @@
+import React from "react";
+import "../styles/about.css";
+import "../styles/about_responsive.css";
+import aboutBg from "../assets/images/about.jpg";
+import Testimonials from "../components/Testimonials";
+import Chefs from "../components/Chefs";
+import Intro from "../components/Intro";
+
+function About() {
+    return (
+        <div className="super_container">
+            <div className="home">
+                <div
+                    className="home_container"
+                    style={{
+                        backgroundImage: `url(${aboutBg})`,
+                        backgroundSize: "cover",
+                        padding: "180px 0"
+                    }}
+                >
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center">
+                                {/*<div className="page_subtitle_intro">*/}
+                                {/*    About us*/}
+                                {/*</div>*/}
+                                {/*<div className="home_title">*/}
+                                {/*    <h1>About us</h1>*/}
+                                {/*</div>*/}
+                                <div className="home_title page_subtitle_intro"><h1>About us</h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Intro/>
+            {/*<Chefs/>*/}
+            <Testimonials/>
+        </div>
+    );
+}
+
+export default About;

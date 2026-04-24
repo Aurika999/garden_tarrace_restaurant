@@ -1,0 +1,102 @@
+/* Intro container */
+.intro {
+	width: 95%;
+	background: #FFFFFF;
+	#padding-top: 1px;
+	position: relative; /* pentru ca .intro_content absolut să fie în raport cu acesta */
+}
+
+/* Imagine Intro */
+.intro_image {
+	width: 90%;
+}
+.intro_image img {
+	max-width: 100%;
+}
+
+/* Chenar pentru text */
+.intro_content {
+	position: absolute;
+	top: 50%;
+	right: -165px;
+	width: 679px;
+	background: #FFFFFF;
+	border: 2px solid #b49383;
+	box-shadow: 0px 45px 70px rgba(0,0,0,0.24);
+	z-index: 1;
+	padding: 55px 50px 59px 70px;
+	transform: translateY(-50%);
+	border-radius: 10px; /* colțuri rotunjite */
+}
+
+/* Subtitlu */
+.intro_subtitle {
+	font-size: 36px;
+}
+
+.page_subtitle_intro {
+	font-family: 'Edwardian Script ITC', sans-serif;
+	color: #b49383;
+	line-height: 0.75;
+	font-size: 60px;
+}
+
+
+
+/* Titlu */
+.intro_title {
+	margin-top: 6px;
+}
+.intro_title h2 {
+	font-size: 48px;
+}
+
+/* Text */
+.intro_text {
+	margin-top: 32px;
+}
+
+/* Media queries pentru responsive */
+@media only screen and (max-width: 1199px) {
+	.intro_content {
+		right: -30px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.intro_content {
+		position: relative;
+		top: auto;
+		transform: none;
+		right: auto;
+		margin-bottom: 90px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.intro_content {
+		padding-left: 49px;
+	}
+	.intro_title h2 {
+		font-size: 36px;
+	}
+	.intro_subtitle {
+		font-size: 40px;
+	}
+	.intro_text {
+		margin-top: 24px;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.intro_content {
+		padding-left: 30px;
+	}
+	.intro_title h2 {
+		font-size: 32px;
+	}
+	.intro_subtitle {
+		font-size: 24px;
+	}
+	.intro_text p {
+		font-size: 14px;
+	}
+}

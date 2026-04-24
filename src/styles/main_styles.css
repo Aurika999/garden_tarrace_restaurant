@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/******************************
+1. Fonts
+******************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+@font-face {
+	font-family: "Edward";
+	src: url("../assets/fonts/edwardian_script_itc.ttf") format("truetype"),
+	url("../assets/fonts/edwardian_script_itc.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*********************************
+2. Body and general styles
+*********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 14px;
+	background: #ffffff;
+	color: #a5a5a5;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #636363;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.97); /* negru */
+	height: 80px; /* important pentru spacing */
+	display: flex;
+	align-items: center;
+}
+/*.header {*/
+/*	background: transparent;*/
+/*	transition: 0.3s;*/
+/*}*/
+
+.header.scrolled {
+	background: #000;
+}
+
+
+
